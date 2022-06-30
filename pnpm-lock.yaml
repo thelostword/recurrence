@@ -3,18 +3,18 @@ lockfileVersion: 5.4
 specifiers:
   '@vicons/material': ^0.12.0
   '@vitejs/plugin-vue': ^2.3.3
-  naive-ui: ^2.30.6
-  vite: ^2.9.9
-  vue: ^3.2.25
+  naive-ui: ^2.30.8
+  vite: ^2.9.13
+  vue: ^3.2.37
 
 dependencies:
   '@vicons/material': 0.12.0
-  naive-ui: 2.30.6_vue@3.2.37
+  naive-ui: 2.30.8_vue@3.2.37
   vue: 3.2.37
 
 devDependencies:
-  '@vitejs/plugin-vue': 2.3.3_vite@2.9.12+vue@3.2.37
-  vite: 2.9.12
+  '@vitejs/plugin-vue': 2.3.3_vite@2.9.13+vue@3.2.37
+  vite: 2.9.13
 
 packages:
 
@@ -88,14 +88,14 @@ packages:
     resolution: {integrity: sha512-chv1CYAl8P32P3Ycwgd5+vw/OFNc2mtkKdb1Rw4T5IJmKy6GVDsoUKV3N2l208HATn7CCQphZtuPDdsm7K2kmA==}
     dev: false
 
-  /@vitejs/plugin-vue/2.3.3_vite@2.9.12+vue@3.2.37:
+  /@vitejs/plugin-vue/2.3.3_vite@2.9.13+vue@3.2.37:
     resolution: {integrity: sha512-SmQLDyhz+6lGJhPELsBdzXGc+AcaT8stgkbiTFGpXPe8Tl1tJaBw1A6pxDqDuRsVkD8uscrkx3hA7QDOoKYtyw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.5.10
       vue: ^3.2.25
     dependencies:
-      vite: 2.9.12
+      vite: 2.9.13
       vue: 3.2.37
     dev: true
 
@@ -546,8 +546,8 @@ packages:
       sourcemap-codec: 1.4.8
     dev: false
 
-  /naive-ui/2.30.6_vue@3.2.37:
-    resolution: {integrity: sha512-QawTYvC+V9zc2hCl5dKgTowiAfCh+GBTdOp8Kswd4bx+o2rdtxrH83tZeFoABsxh3nOx4AL3r/DWfIVdoBqi1A==}
+  /naive-ui/2.30.8_vue@3.2.37:
+    resolution: {integrity: sha512-KRGq9ZwKt/7XyrmSEhqqTNTEDS/gyogCySWX/RKYDcehEDgkJmYrU2WRCtu/RblT/6u3K4d3Dja2+qP1FnHg8Q==}
     peerDependencies:
       vue: ^3.0.0
     dependencies:
@@ -670,8 +670,8 @@ packages:
       vue: 3.2.37
     dev: false
 
-  /vite/2.9.12:
-    resolution: {integrity: sha512-suxC36dQo9Rq1qMB2qiRorNJtJAdxguu5TMvBHOc/F370KvqAe9t48vYp+/TbPKRNrMh/J55tOUmkuIqstZaew==}
+  /vite/2.9.13:
+    resolution: {integrity: sha512-AsOBAaT0AD7Mhe8DuK+/kE4aWYFMx/i0ZNi98hJclxb4e0OhQcZYUrvLjIaQ8e59Ui7txcvKMiJC1yftqpQoDw==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
