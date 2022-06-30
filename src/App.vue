@@ -1,80 +1,50 @@
 <!--
  * @Author: losting
  * @Date: 2022-06-27 08:56:27
- * @LastEditTime: 2022-06-27 09:16:17
+ * @LastEditTime: 2022-06-30 12:03:06
  * @LastEditors: losting
  * @Description: 
  * @FilePath: \recurrence\src\App.vue
 -->
 <script setup>
-import {NButton, NSpace, NIcon} from 'naive-ui'
+import { NTabs, NTabPane, NIcon } from 'naive-ui'
 import { MoreVertRound, CloseSharp } from '@vicons/material';
 
-const btnList = [
-  {
-    size: 'tiny',
-    iconSize: 10,
-    icon: CloseSharp,
-    iconPlacement: 'left',
-    text: '按钮'
-  },
-  {
-    size: 'tiny',
-    iconSize: 10,
-    icon: CloseSharp,
-    iconPlacement: 'right',
-    text: '按钮'
-  },
-  {
-    size: 'tiny',
-    iconSize: 20,
-    icon: CloseSharp,
-    iconPlacement: 'left',
-    text: '按钮'
-  },
-  {
-    size: 'medium',
-    iconSize: 12,
-    icon: CloseSharp,
-    iconPlacement: 'left',
-    text: ''
-  },
-  {
-    size: 'medium',
-    iconSize: 28,
-    icon: CloseSharp,
-    iconPlacement: 'left',
-    text: ''
-  },
-  {
-    size: 'medium',
-    iconSize: 28,
-    icon: MoreVertRound,
-    iconPlacement: 'left',
-    text: ''
-  },
-]
 </script>
 
 <template>
-  <h1>button 组件样式问题复现示例</h1>
-  <NSpace>
-    <NButton
-      v-for="(item, index) in btnList"
-      :key="index"
-      type="error"
-      :size="item.size"
-      :icon-placement="item.iconPlacement"
+  <h1>paneStyle 设置padding</h1>
+  <div class="wrap">
+    <n-tabs
+      type="line"
+      size="large"
+      :tabs-padding="20"
+      pane-style="padding: 20px;"
     >
-      {{item.text}}
-      <template #icon>
-        <NIcon
-          :component="item.icon"
-          :size="item.iconSize"
-        />
-      </template>
-    </NButton>
-  </NSpace>
+      <n-tab-pane name="基本资料">
+        <div style="background: #00000099;">基本资料</div>
+      </n-tab-pane>
+      <n-tab-pane name="修改密码">
+        <div style="background: red">修改密码</div>
+      </n-tab-pane>
+    </n-tabs>
+  </div>
+  
+  <h1>paneStyle 不设置padding</h1>
+  <div class="wrap">
+    <n-tabs
+      type="line"
+      size="large"
+      :tabs-padding="20"
+    >
+      <n-tab-pane name="基本资料">
+        <div style="background: #00000099;">基本资料</div>
+      </n-tab-pane>
+      <n-tab-pane name="修改密码">
+        <div style="background: red">修改密码</div>
+      </n-tab-pane>
+    </n-tabs>
+  </div>
 </template>
 
 <style>
@@ -85,5 +55,10 @@ body { margin: 0 }
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.wrap {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #000;
 }
 </style>
