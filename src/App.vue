@@ -1,50 +1,20 @@
 <!--
  * @Author: losting
  * @Date: 2022-06-27 08:56:27
- * @LastEditTime: 2022-06-30 12:03:06
+ * @LastEditTime: 2022-06-30 12:40:43
  * @LastEditors: losting
  * @Description: 
  * @FilePath: \recurrence\src\App.vue
 -->
 <script setup>
-import { NTabs, NTabPane, NIcon } from 'naive-ui'
+import {  } from 'naive-ui'
 import { MoreVertRound, CloseSharp } from '@vicons/material';
 
 </script>
 
 <template>
-  <h1>paneStyle 设置padding</h1>
-  <div class="wrap">
-    <n-tabs
-      type="line"
-      size="large"
-      :tabs-padding="20"
-      pane-style="padding: 20px;"
-    >
-      <n-tab-pane name="基本资料">
-        <div style="background: #00000099;">基本资料</div>
-      </n-tab-pane>
-      <n-tab-pane name="修改密码">
-        <div style="background: red">修改密码</div>
-      </n-tab-pane>
-    </n-tabs>
-  </div>
-  
-  <h1>paneStyle 不设置padding</h1>
-  <div class="wrap">
-    <n-tabs
-      type="line"
-      size="large"
-      :tabs-padding="20"
-    >
-      <n-tab-pane name="基本资料">
-        <div style="background: #00000099;">基本资料</div>
-      </n-tab-pane>
-      <n-tab-pane name="修改密码">
-        <div style="background: red">修改密码</div>
-      </n-tab-pane>
-    </n-tabs>
-  </div>
+  <h1>标题</h1>
+  <div class="wrap">content</div>
 </template>
 
 <style>
