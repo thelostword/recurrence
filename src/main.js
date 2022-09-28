@@ -2,7 +2,7 @@
  * @Author: thelostword
  * @Date: 2022-06-27 08:56:27
  * @LastEditors: thelostword
- * @LastEditTime: 2022-09-28 14:27:30
+ * @LastEditTime: 2022-09-28 15:04:20
  * @FilePath: \recurrence\src\main.js
  */
 import { createApp } from 'vue';

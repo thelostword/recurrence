@@ -2,52 +2,16 @@
  * @Author: thelostword
  * @Date: 2022-09-28 14:25:58
  * @LastEditors: thelostword
- * @LastEditTime: 2022-09-28 14:31:58
+ * @LastEditTime: 2022-09-28 15:01:45
  * @FilePath: \recurrence\src\naive-ui.js
  */
 import { computed } from 'vue';
 import {
   create,
-
-  NForm,
-  NFormItem,
-  NInput,
-  NAutoComplete,
-  NCheckbox,
-  NRadioGroup,
-  NRadio,
-  NSelect,
-  NDatePicker,
-  NButton,
-  NUpload,
-
-  NDataTable,
-  NModal,
-
-  NGrid,
-  NGridItem,
-  NSpace,
-  NCard,
-  NTabs,
-  NTabPane,
-
-  NIcon,
-  NSpin,
-  NTag,
   NEllipsis,
-  NDropdown,
-  NTime,
-  NAvatar,
-  NList,
-  NListItem,
-  NDescriptions,
-  NDescriptionsItem,
-  NStatistic,
-  NNumberAnimation,
-  NH6,
-  NText,
   NPopover,
   NTooltip,
+  NButton,
 
   createDiscreteApi,
   darkTheme,
@@ -74,45 +38,10 @@ window.$notification = notification;
 
 export default create({
   components: [
-    NForm,
-    NFormItem,
-    NInput,
-    NAutoComplete,
-    NCheckbox,
-    NRadioGroup,
-    NRadio,
-    NSelect,
-    NDatePicker,
-    NButton,
-    NUpload,
-
-    NDataTable,
-    NModal,
-
-    NGrid,
-    NGridItem,
-    NSpace,
-    NCard,
-    NTabs,
-    NTabPane,
-
-    NIcon,
-    NSpin,
-    NTag,
     NEllipsis,
-    NDropdown,
-    NTime,
-    NAvatar,
-    NList,
-    NListItem,
-    NDescriptions,
-    NDescriptionsItem,
-    NStatistic,
-    NNumberAnimation,
-    NH6,
-    NText,
     NPopover,
     NTooltip,
+    NButton,
   ],
 });
 
