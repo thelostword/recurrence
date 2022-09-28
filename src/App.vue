@@ -1,34 +1,66 @@
 <!--
  * @Author: losting
  * @Date: 2022-06-27 08:56:27
- * @LastEditTime: 2022-06-30 12:40:43
- * @LastEditors: losting
+ * @LastEditTime: 2022-09-28 14:37:29
+ * @LastEditors: thelostword
  * @Description: 
  * @FilePath: \recurrence\src\App.vue
 -->
-<script setup>
-import {  } from 'naive-ui'
-import { MoreVertRound, CloseSharp } from '@vicons/material';
-
-</script>
-
 <template>
-  <h1>标题</h1>
-  <div class="wrap">content</div>
+  <NConfigProvider
+    :locale="zhCN"
+    :date-locale="dateZhCN"
+    :theme-overrides="isDark ? darkTheme : lightTheme"
+  >
+    <NMessageProvider>
+      
+      <n-layout style="height: 100vh">
+        <n-button @click="toggle()">
+          主题切换
+        </n-button>
+
+        <n-ellipsis style="max-width: 240px">
+          住在我心里孤独的 孤独的海怪 痛苦之王 开始厌倦 深海的光 停滞的海浪
+        </n-ellipsis>
+        
+        <n-tooltip trigger="hover">
+          <template #trigger>
+            <n-button> 鸭子 </n-button>
+          </template>
+          如果它长得像鸭子，走起来像鸭子，叫起来也像鸭子，那它一定是个鸭子。
+        </n-tooltip>
+
+        <n-popover trigger="hover">
+          <template #trigger>
+            <n-button>悬浮</n-button>
+          </template>
+          <span>或许不想知道你的花园长得咋样</span>
+        </n-popover>
+      </n-layout>
+    </NMessageProvider>
+  </NConfigProvider>
 </template>
 
+<script setup>
+import { useDark } from '@/hooks';
+import {
+  NConfigProvider,
+  NMessageProvider,
+  NLayout,
+  zhCN,
+  dateZhCN,
+  darkTheme,
+  lightTheme
+} from 'naive-ui';
+
+const { isDark, toggle } = useDark();
+</script>
+
 <style>
-body { margin: 0 }
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.n-config-provider {
+  height: 100%;
 }
-.wrap {
-  width: 500px;
-  margin: 0 auto;
-  border: 1px solid #000;
-}
+/* html[dark] body {
+  background-color: black;
+} */
 </style>
